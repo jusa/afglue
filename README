@@ -1,0 +1,6 @@
+Droid AudioFlinger Glue
+=======================
+
+Simple service and library for forwarding calls from AudioSystem to client
+other than default AudioFlinger.
+
