@@ -4,7 +4,7 @@
 %global debug_package       %{nil}
 %define __provides_exclude_from ^.*$
 
-%define _target_cpu %{device_rpm_architecture_string}
+%define _target_cpu armv7hl
 
 Name:          afglue
 Summary:       Android AudioFlinger glue library
@@ -32,10 +32,10 @@ BuildArch:     noarch
 
 %prep
 
-%if %{?device_rpm_architecture_string:0}%{!?device_rpm_architecture_string:1}
-echo "device_rpm_architecture_string is not defined"
-exit -1
-%endif
+#%if %{?device_rpm_architecture_string:0}%{!?device_rpm_architecture_string:1}
+#echo "device_rpm_architecture_string is not defined"
+#exit -1
+#%endif
 
 %setup -T -c -n afglue
 sudo chown -R abuild:abuild /home/abuild/src/droid/
