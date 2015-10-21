@@ -1,6 +1,8 @@
 Droid AudioFlinger Glue
 =======================
 
+Based on work by Mohammed Hassan <mohammed.hassan@jolla.com>
+
 Simple service and library for forwarding calls from AudioSystem to client
 other than default AudioFlinger.
 
